@@ -1,0 +1,178 @@
+body {
+    font-family: Helvetica, Arial, MS Trebuchet, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(114, 114, 114);
+    padding: 10px;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+.header-divide {
+    flex-basis: 33.3%;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+header div {
+    text-align: end;
+    align-self: center;
+    font-size: 10px;
+}
+
+.log-out-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#logo {
+    height: 17.5px;
+}
+
+#logout {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 2px solid gray;
+    background-color: rgb(201, 201, 201);
+}
+
+label {
+    margin: 5px;
+    font-size: 13px;
+}
+
+input {
+    font-size: 13px;
+}
+
+input[type='date'] {
+    font-family: Helvetica, Arial, MS Trebuchet, sans-serif;
+}
+
+button {
+    margin: 0 0 0 10px;
+}
+
+#search {
+    font-weight: bold;
+}
+
+#clear {
+    color: red;
+}
+
+.refresh button{
+    margin: 8px auto;
+    display: block;
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+#table-container {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.waiverIconContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.noneFound {
+    text-align: center;
+}
+
+.shaded {
+    background-color: rgb(255, 245, 232);
+}
+
+.italic {
+    font-style: italic;
+    color: rgb(0, 124, 10);
+}
+
+@media only screen and (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    label {
+        margin: 3px;
+    }
+
+    #search {
+        margin: 5px 0;
+    }
+    
+    #clear {
+        margin: 0;
+    }
+
+    td p {
+        margin: 5px;
+    }
+
+    #table-container {
+        padding: 3px;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+}

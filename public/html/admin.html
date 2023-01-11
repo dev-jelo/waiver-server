@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style-admin.css">
+    <title>Waivers Admin Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-divide logo-container">
+            <img src="/cropped-logo-WHITE.png" alt="[redacted]" id="logo">
+        </div>
+        <h1 class="header-divide">Waivers Admin</h1>
+        <div class="header-divide log-out-container">
+            <div id="logout">Log out</div>
+        </div>
+    </header>
+    <div class="search-container">
+        <label for="first-name">First Name:</label>
+        <input id="firstName" name="first-name" type="text">
+        <label for="last-name">Last Name:</label>
+        <input id="lastName" name="last-name" type="text">
+        <label for="DOB">Date of Birth:</label>
+        <input id="DOB" name="DOB" type="date">
+        <button id="search">Search</button>
+        <button id="clear">Clear</button>
+    </div>
+    <div class="refresh">
+        <button id="refreshButton">Refresh Newest 50</button>
+    </div>
+    <div id="table-container">
+        <h1 class="noneFound hidden">No such person found</h1>
+        <table>
+            <tr>
+                <th class="hidden">id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Registration Date</th>
+                <th>Minor?</th>
+                <th><i>View</i></th>
+            </tr>
+        </table>
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

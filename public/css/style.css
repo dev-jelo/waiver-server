@@ -1,0 +1,215 @@
+body {
+    font-family: Helvetica, Arial, MS Trebuchet, sans-serif;
+    background-color: #f3f5f8;
+    text-align: justify;
+    line-height: 20px;
+    user-select: none;
+}
+
+#logo {
+    display: block;
+    margin: 15px auto;
+    width: 20%;
+}
+
+main {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 750px;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0px 0px 5px 2px rgb(228, 228, 228);
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    align-self: center;
+    text-align: center;
+    line-height: 25px;
+}
+
+.red {
+    color: rgb(184, 49, 47);
+}
+
+label {
+    font-size: medium;
+}
+
+input[type=checkbox] + label {
+    padding: 4px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 8px;
+    margin: 10px 10px 20px 0;
+    font-family: Helvetica, Arial, MS Trebuchet, sans-serif;
+    font-size: medium;
+}
+
+.gray-placeholder {
+    color: rgb(212, 212, 212);
+}
+
+::placeholder { 
+    color: rgb(212, 212, 212);
+    font-weight: 100;
+}
+
+.italic::placeholder {
+    font-style: italic;
+}
+
+.italic {
+    width: 100%;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+h4 {
+    margin: 8px 0;
+    font-weight: normal;
+}
+
+ol {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+}
+
+th {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px 15px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px 15px;
+}
+
+.wrapper {
+    margin: 3px 0;
+    position: relative;
+    width: 300px;
+    height: 150px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px dashed rgb(212, 212, 212);
+}
+  
+.signature-pad {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    cursor: crosshair;
+}
+
+.clear-button {
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(184, 49, 47);
+    align-self: flex-start;
+    padding: 0;
+}
+
+.declaration {
+    font-size: medium;
+}
+
+.declaration-checkbox-container {
+    margin: 20px 0;
+    display: flex;
+}
+
+.checkbox {
+    margin-left: 0;
+    margin-right: 10px;
+    align-self: center;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;    
+}
+
+.declaration-label {
+    flex-basis: 100%;
+}
+
+#submit {
+    margin: 30px auto;
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 80, 228);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#submit:hover {
+    background-color: rgb(90, 142, 238);
+}
+
+#submit:active {
+    background-color: rgb(0, 48, 136);
+}
+
+.loader {
+    border: 8px solid #e3e3e3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 1s linear infinite;
+    margin: 30px auto;
+}
+
+.unfilled {
+    border: 2px solid red;
+    background-color: yellow;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media print {
+    main {
+        border: none;
+        box-shadow: none;
+        max-width: none;
+    }
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    /* background-image: url(''); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+  
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    margin: 34px 50px;
+    opacity: 0;
+    font-size: 45px;
+    font-weight: bold;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+h2 {
+    margin: 20px 50px;
+    opacity: 0;
+    font-weight: 200;
+}
+
+.first {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.second {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    /* background-image: url(''); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+  
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#logo-container {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.spacer {
+    width: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+img {
+    position: relative;
+    bottom: 8px;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+.first {
+    opacity: 0;
+    margin-top: 60px;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#buttons-container {
+    opacity: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+a {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+    margin: 0 50px;
+    padding: 15px;
+    text-decoration: none;
+    width: 150px;
+    font-size: 30px;
+    box-shadow: 0 0 7px 1px;
+}
+
+a:hover {
+    box-shadow: 0 0 10px 5px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buttons-container {
+        flex-direction: column;
+    }
+
+    a {
+        margin: 20px;
+    }
+
+    img {
+        position: static;
+        margin-top: 20px;
+    }
+}
